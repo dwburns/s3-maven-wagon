@@ -6,7 +6,7 @@ Creates an all in one jar for deploying 3rd party artifacts to an S3 repository.
 
 3. Add your S3 credentials to ~/.m2/settings.xml. The password should NOT be encrypted. Example:
 
-```xml
+<code>
 <servers>
 	<server>
 		<id>s3-maven-repo</id>
@@ -14,7 +14,7 @@ Creates an all in one jar for deploying 3rd party artifacts to an S3 repository.
 		<password>[S3_PASSWORD]</password>
 	</server>
 </servers>
-```
+</code>
 
 4. cd to the directory of the artifacts that you want to deploy, then use deploy:deploy-file like this.
 
